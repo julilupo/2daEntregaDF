@@ -1,0 +1,86 @@
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+.logo {
+    width: 8rem;
+}
+
+.navegador {
+    background-color: #F26900;    
+}
+
+.navegador__lista li a {
+    color: #ffffff;
+}
+
+.hero {
+    background-image: url(../Assets/rose-petals.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.titulo {
+    font-size: 4rem;
+}
+
+.subtitulo {
+    padding: 0 20rem;
+}
+
+.perros img {
+    width: 800px;
+    height: 575px;
+}
+
+.carta {
+    border: #F26900 solid 2px;
+    color: #2A2627;
+}
+
+.boton {
+    border: solid 1px #F26900;
+    background-color: #F26900;
+    color: #ffffff;
+}
+
+.boton:hover {
+    border: #ed3136 1px solid;
+    background-color: #ed3136;
+}
+
+.pieDePagina {
+    background: linear-gradient(180deg, rgba(125,125,125,1) 0%, rgba(242,105,0,1) 0%, rgba(237,49,54,1) 100%, rgba(125,125,125,1) 100%);    
+}
+
+.footer__list li {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.footer__list li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 1024px) {
+    .subtitulo {
+        padding: 1rem;
+    }    
+}
+
+@media screen and (max-width: 992px) {
+    .titulo {
+        font-size: 2rem;
+    }    
+}
+
+@media screen and (max-width: 425px) {
+    .subtitulo {
+        display: none;
+    }
+
+    .perros img {
+        height: 50vh;
+    }
+}
