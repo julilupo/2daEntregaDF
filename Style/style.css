@@ -2,6 +2,8 @@ body {
     font-family: 'Rubik', sans-serif;
 }
 
+/* HEADER */
+
 .logo {
     width: 8rem;
 }
@@ -13,6 +15,25 @@ body {
 .navegador__lista li a {
     color: #ffffff;
 }
+
+/* FOOTER */
+
+.pieDePagina {
+    background: linear-gradient(180deg, rgba(125,125,125,1) 0%, rgba(242,105,0,1) 0%, rgba(237,49,54,1) 100%, rgba(125,125,125,1) 100%);    
+}
+
+.footer__list li {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.footer__list li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+/* INDEX */
 
 .hero {
     background-image: url(../Assets/rose-petals.svg);
@@ -49,33 +70,61 @@ body {
     background-color: #ed3136;
 }
 
-.pieDePagina {
-    background: linear-gradient(180deg, rgba(125,125,125,1) 0%, rgba(242,105,0,1) 0%, rgba(237,49,54,1) 100%, rgba(125,125,125,1) 100%);    
+/* NUESTRO ESPACIO */
+
+.mainEspacio {
+    background-color: #f26900;
+    background-image: linear-gradient(180deg, #f26900 0%, #ffffff 25%, #ffffff 75%, #f26900 99%);
+    color: #2A2627
 }
 
-.footer__list li {
-    list-style: none;
-    margin-top: 1rem;
+.tituloEspacio {
+    text-shadow: #2A2627 2px 2px 4px;
 }
 
-.footer__list li a {
-    text-decoration: none;
-    color: #ffffff;
+.imgEspacio {
+    border-radius: 10px;
 }
+
+.imgInstalaciones {
+    border-radius: 10px;
+    width: 25rem;
+    height: 17rem;
+}
+
+/* MEDIAS QUERIES */
 
 @media screen and (max-width: 1024px) {
+
+    /* index */
+
     .subtitulo {
         padding: 1rem;
     }    
 }
 
 @media screen and (max-width: 992px) {
+
+    /* index */
+
     .titulo {
         font-size: 2rem;
-    }    
+    }
+
+    /* nuestro espacio */
+
+    .imgInstalaciones {
+        padding: 7px;
+
+    }
+    
+    
 }
 
 @media screen and (max-width: 425px) {
+
+    /* index */
+
     .subtitulo {
         display: none;
     }
