@@ -126,7 +126,7 @@ body {
 
 /* SERVICIOS */
 
-.mainServicios {
+.mainServicios, .mainContacto {
     color: #2A2627;
 }
 
