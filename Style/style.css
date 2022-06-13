@@ -86,7 +86,7 @@ body {
     color: #2A2627
 }
 
-.tituloEspacio {
+.tituloEspacio, .titulo {
     text-shadow: #2A2627 2px 2px 4px;
 }
 
@@ -122,6 +122,77 @@ body {
     border: none;
     min-height: 35rem;
     width: 35rem;
+}
+
+/* SERVICIOS */
+
+.mainServicios {
+    color: #2A2627;
+}
+
+
+.imgPeluqueria {
+    border-radius: 68% 32% 46% 54% / 33% 28% 72% 67%;
+    border: #F26900 solid 2px;
+    width: 400px;
+    height: 300px;    
+}
+
+.imgGuarderia {
+    border-radius: 60% 40% 21% 79% / 31% 63% 37% 69% ;
+    border: #F26900 solid 2px;
+    width: 400px;
+    height: 300px;    
+}
+
+.imgPsicologia {
+    border-radius: 60% 40% 57% 43% / 33% 63% 37% 67% ;
+    border: #F26900 solid 2px;
+    width: 400px;
+    height: 300px;    
+}
+
+.imgAdiestramiento {
+    border-radius: 60% 40% 57% 43% / 33% 22% 78% 67% ;
+    border: #F26900 solid 2px;
+    width: 400px;
+    height: 300px;    
+}
+
+.listPeluqueria li, .listServicios li, .listAdiestramiento li {
+    list-style: none;
+}
+
+.listPeluqueria li::before, .listServicios li::before, .listAdiestramiento li::before {
+    content: "\2022";
+    color: #F26900;
+    display: inline-block; 
+    padding-right: 25px;
+    font-size: 50px;
+    line-height: 25px;
+    vertical-align: -11px;
+    width: 15px;
+}
+
+hr {
+    margin: auto;    
+    width: 75%;
+    height: 5px;
+    background-color: #F26900;
+    opacity: 0.8;
+    border: none;
+}
+
+.servGuard {
+    height: 150px;
+}
+
+
+
+/* CONTACTO */
+
+.textoContacto span {
+    display: block;
 }
 
 /* MEDIAS QUERIES */
@@ -165,7 +236,7 @@ body {
     .equipo {
         width: 20rem;
         height: 20rem;
-    }
+    }    
     
 }
 
@@ -181,7 +252,6 @@ body {
         padding: 0;
         width: auto;
     }
-
 
 }
 
@@ -212,6 +282,12 @@ body {
 
     .columnaEquipo {
         width: auto;
+    }
+
+    /* Servicios */
+
+    .textoServicios {
+        font-size: small;
     }
 
 
