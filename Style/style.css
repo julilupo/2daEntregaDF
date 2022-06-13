@@ -16,6 +16,10 @@ body {
     color: #ffffff;
 }
 
+.navegador__lista li a:hover {
+    color: #2A2627;
+}
+
 /* FOOTER */
 
 .pieDePagina {
@@ -30,6 +34,10 @@ body {
 .footer__list li a {
     text-decoration: none;
     color: #ffffff;
+}
+
+.footer__list li a:hover {
+    color: #2A2627;
 }
 
 
@@ -92,6 +100,30 @@ body {
     height: 17rem;
 }
 
+/* QUIENES SOMOS */
+
+.mainNosotros {
+    color: #2A2627;
+    background-color: #f26900;
+    background-image: linear-gradient(180deg, #f26900 0%, #ffffff 25%);
+}
+
+.imgNosotros {
+    border-radius: 50%;
+}
+
+.imgEquipo {
+    height: 300px;
+    width: 50%;
+    border-radius: 50%;
+}
+
+.equipo {
+    border: none;
+    min-height: 35rem;
+    width: 35rem;
+}
+
 /* MEDIAS QUERIES */
 
 @media screen and (max-width: 1024px) {
@@ -100,7 +132,14 @@ body {
 
     .subtitulo {
         padding: 1rem;
-    }    
+    }
+
+    /* Nuestro Equipo */
+
+    .equipo {
+        width: 30rem;
+        height: 30rem;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -115,10 +154,35 @@ body {
 
     .imgInstalaciones {
         padding: 7px;
-
     }
     
+    /* Nuestro Equipo */
+
+    .imgNosotros {
+        width: 50%;
+    }
+
+    .equipo {
+        width: 20rem;
+        height: 20rem;
+    }
     
+}
+
+@media screen and (max-width: 768px) {
+
+    /* Nuestro Equipo */
+
+    .sectionNosotros {
+        margin-bottom: -3rem;
+    }    
+
+    .columnaEquipo {
+        padding: 0;
+        width: auto;
+    }
+
+
 }
 
 @media screen and (max-width: 425px) {
@@ -132,4 +196,23 @@ body {
     .perros img {
         height: 50vh;
     }
+
+    /* Nuestro Equipo */
+
+    
+    .imgNosotros {
+        order: -1;
+        padding: 1rem;
+        width: auto;
+    }
+
+    .textoNosotros {
+        flex-direction: column;
+    }
+
+    .columnaEquipo {
+        width: auto;
+    }
+
+
 }
