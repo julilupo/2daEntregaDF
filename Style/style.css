@@ -205,6 +205,10 @@ hr {
         padding: 1rem;
     }
 
+    .indexSlider{
+        width: 100% !important;
+    }
+
     /* Nuestro Equipo */
 
     .equipo {
